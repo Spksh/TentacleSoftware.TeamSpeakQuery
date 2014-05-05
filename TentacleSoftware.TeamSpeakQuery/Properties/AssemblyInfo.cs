@@ -6,11 +6,11 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("TentacleSoftware.TeamSpeakQuery")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("A task-based event-driven Team Speak 3 ServerQuery client that supports SOCKS4 proxies.")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("TentacleSoftware.TeamSpeakQuery")]
-[assembly: AssemblyCopyright("Copyright ©  2014 Sam Wood")]
+[assembly: AssemblyCopyright("Copyright © 2014 Sam Wood")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
