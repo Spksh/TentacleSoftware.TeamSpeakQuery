@@ -1,7 +1,9 @@
 TentacleSoftware.TeamSpeakQuery
 ===============================
 
-A task-based event-driven Team Speak 3 ServerQuery client that supports SOCKS4 proxies.
+A task-based event-driven TeamSpeak 3 ServerQuery client that supports SOCKS4 proxies.
+
+Nuget package: https://www.nuget.org/packages/TentacleSoftware.TeamSpeakQuery
 
 You should be familiar with the TS3 ServerQuery command syntax. Bedtime reading is available here: http://media.teamspeak.com/ts3_literature/TeamSpeak%203%20Server%20Query%20Manual.pdf
 
