@@ -270,19 +270,19 @@
         /// Database ID of the virtual server
         /// </summary>
         [PropertyMapping("virtualserver_id", Required = true)]
-        public string VirtualServerId { get; set; }
+        public int VirtualServerId { get; set; }
 
         /// <summary> 
         /// Machine ID identifying the server instance associated with the virtual server in the database
         /// </summary>
         [PropertyMapping("virtualserver_machine_id", Required = true)]
-        public string VirtualServerMachineId { get; set; }
+        public int VirtualServerMachineId { get; set; }
 
         /// <summary> 
         /// UDP port the virtual server is listening on
         /// </summary>
         [PropertyMapping("virtualserver_port", Required = true)]
-        public string VirtualServerPort { get; set; }
+        public int VirtualServerPort { get; set; }
 
         /// <summary> 
         /// Indicates whether the server starts automatically with the server instance or not
