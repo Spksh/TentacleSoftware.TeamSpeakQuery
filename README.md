@@ -7,7 +7,7 @@ Nuget package: https://www.nuget.org/packages/TentacleSoftware.TeamSpeakQuery
 
 You should be familiar with the TS3 ServerQuery command syntax. Bedtime reading is available here: http://media.teamspeak.com/ts3_literature/TeamSpeak%203%20Server%20Query%20Manual.pdf
 
-Step 1. Instantiate a shiny new ServerQueryClient, passing in destination host and ServerQuery port (this is 10011 by default). 
+Step 1. Instantiate a shiny new ServerQueryClient, passing in destination host and ServerQuery port (this is 10011 by default).
 
 Include a throttle timespan to avoid flooding the server. If you're not on the server's whitelist, your throttle will need to be higher. We don't want to get banned, do we?
 
@@ -81,7 +81,7 @@ Step 8: Have your way with the poor, innocent server!
 
 ```
 ClientListResult clientList = client.ClientList().Result;
-Console.WriteLine("clientList {0} {1} [x{2}]", channelList.Success, channelList.ErrorId, clientList.Values != null ? clientList.Values.Count : 0);
+Console.WriteLine("clientList {0} {1} [x{2}]", clientList.Success, clientList.ErrorId, clientList.Values != null ? clientList.Values.Count : 0);
 ```
 
 Commands are named the same as the text commands in the TS3 ServerQuery manual. I've explicitly implemented some of the commands I most use as methods on ServerQueryClient:
