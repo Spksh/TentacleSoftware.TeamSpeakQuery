@@ -143,6 +143,17 @@ namespace TentacleSoftware.TeamSpeakQuery
         }
 
         /// <summary>
+        /// Change your ServerQuery clients nickname.
+        /// </summary>
+        /// <param name="nickname"></param>
+        /// <returns></returns>
+        public Task<ServerQueryBaseResult> Nickname(string nickname)
+        {
+            return SendCommandAsync(new ServerQueryCommand<ServerQueryBaseResult>(Command.clientupdate)
+                .Add(Parameter.client_nickname, nickname));
+        }
+
+        /// <summary>
         /// Deselects the active virtual server and logs out from the server instance.
         /// </summary>
         /// <returns></returns>
