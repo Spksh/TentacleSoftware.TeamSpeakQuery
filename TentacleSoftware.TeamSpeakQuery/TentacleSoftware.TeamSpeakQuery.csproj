@@ -65,6 +65,8 @@
     <Compile Include="ServerQueryResult\ServerInfoResult.cs" />
     <Compile Include="ServerQueryClient.cs" />
     <Compile Include="ServerQueryCommand.cs" />
+    <Compile Include="ServerQueryResult\ServerListInfoResult.cs" />
+    <Compile Include="ServerQueryResult\ServerListResult.cs" />
     <Compile Include="ServerQueryResult\ServerQueryBaseResult.cs" />
     <Compile Include="ServerQueryResult\TextResult.cs" />
     <Compile Include="TypeMappingAttribute.cs" />
