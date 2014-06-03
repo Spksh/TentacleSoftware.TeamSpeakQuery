@@ -166,6 +166,18 @@ namespace TentacleSoftware.TeamSpeakQuery
         }
 
         /// <summary>
+        /// Displays a list of virtual servers including their ID, status, number of clients online, etc.
+        /// If you're using the -all option, the server will list all virtual servers stored in the database.
+        /// </summary>
+        /// <returns></returns>
+        public Task<ServerListResult> ServerList()
+        {
+            return SendCommandAsync(new ServerQueryCommand<ServerListResult>(Command.serverlist)
+                .Add(Option.all)
+                .Add(Option.uid));
+        }
+
+        /// <summary>
         /// Displays detailed configuration information about the selected virtual server including unique ID, number of clients online, configuration, etc.
         /// </summary>
         /// <returns></returns>
