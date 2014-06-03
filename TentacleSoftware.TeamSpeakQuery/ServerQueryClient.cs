@@ -271,7 +271,7 @@ namespace TentacleSoftware.TeamSpeakQuery
         /// <returns></returns>
         public Task<ServerQueryBaseResult> ClientPoke(string message, int clientId)
         {
-            return SendCommandAsync(new ServerQueryCommand<ServerQueryBaseResult>(Command.clientkick)
+            return SendCommandAsync(new ServerQueryCommand<ServerQueryBaseResult>(Command.clientpoke)
                 .Add(Parameter.clid, clientId)
                 .Add(Parameter.msg, message));
         }
