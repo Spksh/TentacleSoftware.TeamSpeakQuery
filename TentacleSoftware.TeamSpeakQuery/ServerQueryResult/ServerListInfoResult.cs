@@ -23,44 +23,50 @@
         /// <summary> 
         /// Number of clients connected to the virtual server
         /// </summary>
-        [PropertyMapping("virtualserver_clientsonline", Required = true)]
+        [PropertyMapping("virtualserver_clientsonline")]
         public int VirtualServerClientsonline { get; set; }
 
         /// <summary> 
         /// Number of ServerQuery clients connected to the virtual server
         /// </summary>
-        [PropertyMapping("virtualserver_queryclientsonline", Required = true)]
+        [PropertyMapping("virtualserver_queryclientsonline")]
         public int VirtualServerQueryclientsonline { get; set; }
 
         /// <summary> 
         /// Number of slots available on the virtual server
         /// </summary>
-        [PropertyMapping("virtualserver_maxclients", Required = true)]
+        [PropertyMapping("virtualserver_maxclients")]
         public int VirtualServerMaxclients { get; set; }
 
         /// <summary> 
         /// Uptime in seconds
         /// </summary>
-        [PropertyMapping("virtualserver_uptime", Required = true)]
+        [PropertyMapping("virtualserver_uptime")]
         public long VirtualServerUptime { get; set; }
 
         /// <summary> 
         /// Name of the virtual server
         /// </summary>
-        [PropertyMapping("virtualserver_name", Required = true)]
+        [PropertyMapping("virtualserver_name")]
         public string VirtualServerName { get; set; }
 
         /// <summary> 
         /// Indicates whether the server starts automatically with the server instance or not
         /// </summary>
-        [PropertyMapping("virtualserver_autostart", Required = true)]
+        [PropertyMapping("virtualserver_autostart")]
         public string VirtualServerAutostart { get; set; }
 
         /// <summary> 
         /// Machine ID identifying the server instance associated with the virtual server in the database
         /// </summary>
-        [PropertyMapping("virtualserver_machine_id", Required = true)]
+        [PropertyMapping("virtualserver_machine_id")]
         public int VirtualServerMachineId { get; set; }
+
+        /// <summary> 
+        /// Unique ID of the virtual server
+        /// </summary>
+        [PropertyMapping("virtualserver_unique_identifier")]
+        public string VirtualServerUniqueIdentifer { get; set; }
 
         public override bool Parse(string message)
         {
