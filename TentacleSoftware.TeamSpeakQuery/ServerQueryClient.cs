@@ -147,7 +147,7 @@ namespace TentacleSoftware.TeamSpeakQuery
         /// </summary>
         /// <param name="nickname"></param>
         /// <returns></returns>
-        public Task<ServerQueryBaseResult> Nickname(string nickname)
+        public Task<ServerQueryBaseResult> ClientUpdate(string nickname)
         {
             return SendCommandAsync(new ServerQueryCommand<ServerQueryBaseResult>(Command.clientupdate)
                 .Add(Parameter.client_nickname, nickname));
