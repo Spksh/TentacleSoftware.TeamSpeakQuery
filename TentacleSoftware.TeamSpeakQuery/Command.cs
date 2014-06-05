@@ -135,6 +135,7 @@
         port,
         client_login_name,
         client_login_password,
+        client_nickname,
         virtualserver_port,
         virtualserver_name,
         type,
