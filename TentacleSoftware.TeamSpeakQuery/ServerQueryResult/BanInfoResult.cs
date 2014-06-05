@@ -27,7 +27,7 @@
         public string Invokername { get; set; }
 
         [PropertyMapping("invokercldbid", Required = true)]
-        public string Invokercldbid { get; set; }
+        public int Invokercldbid { get; set; }
 
         [PropertyMapping("invokeruid", Required = true)]
         public string Invokeruid { get; set; }

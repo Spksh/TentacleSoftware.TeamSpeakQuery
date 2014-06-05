@@ -60,7 +60,7 @@
         /// ID of the channel below which the channel is positioned
         /// </summary>
         [PropertyMapping("channel_order", Required = true)]
-        public string ChannelOrder { get; set; }
+        public int ChannelOrder { get; set; }
 
         /// <summary> 
         /// Indicates whether the channel is permanent or not
@@ -150,13 +150,13 @@
         /// The channels parent ID.
         /// </summary>
         [PropertyMapping("pid", Required = true)]
-        public string Pid { get; set; }
+        public int Pid { get; set; }
 
         /// <summary> 
         /// The channels ID
         /// </summary>
         [PropertyMapping("cid")]
-        public string Cid { get; set; }
+        public int Cid { get; set; }
 
         [PropertyMapping("total_clients_family")]
         public string TotalClientsFamily { get; set; }

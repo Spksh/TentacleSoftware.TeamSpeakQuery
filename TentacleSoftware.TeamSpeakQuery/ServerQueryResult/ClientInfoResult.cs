@@ -66,13 +66,13 @@
         /// Database ID of the client
         /// </summary>
         [PropertyMapping("client_database_id", Required = true)]
-        public string ClientDatabaseId { get; set; }
+        public int ClientDatabaseId { get; set; }
 
         /// <summary> 
         /// Current channel group ID of the client
         /// </summary>
         [PropertyMapping("client_channel_group_id")]
-        public string ClientChannelGroupId { get; set; }
+        public int ClientChannelGroupId { get; set; }
 
         /// <summary> 
         /// Current server group IDs of the client separated by a comma
@@ -286,13 +286,13 @@
         public string ClientCountry { get; set; }
 
         [PropertyMapping("cid")]
-        public string ChannelId { get; set; }
+        public int ChannelId { get; set; }
 
         [PropertyMapping("clid")]
-        public string ClientId { get; set; }
+        public int ClientId { get; set; }
 
         [PropertyMapping("client_channel_group_inherited_channel_id")]
-        public string ClientChannelGroupInheritedChannelId { get; set; }
+        public int ClientChannelGroupInheritedChannelId { get; set; }
 
         [PropertyMapping("client_flag_talking")]
         public string ClientFlagTalking { get; set; }
