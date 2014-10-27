@@ -356,7 +356,7 @@ namespace TentacleSoftware.TeamSpeakQuery
         public Task<ServerQueryBaseResult> SendTextMessage(TextMessageTargetMode targetMode, int targetId, string message)
         {
             return SendCommandAsync(new ServerQueryCommand<ServerQueryBaseResult>(Command.sendtextmessage)
-                .Add(Parameter.targetmode, targetMode)
+                .Add(Parameter.targetmode, (int)targetMode)
                 .Add(Parameter.target, targetId)
                 .Add(Parameter.msg, message));
         }
