@@ -37,9 +37,9 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="TentacleSoftware.Telnet, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="TentacleSoftware.Telnet, Version=1.0.1.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\TentacleSoftware.Telnet.1.0.3.0\lib\net45\TentacleSoftware.Telnet.dll</HintPath>
+      <HintPath>..\packages\TentacleSoftware.Telnet.1.0.1.0\lib\net45\TentacleSoftware.Telnet.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
