@@ -228,7 +228,8 @@
         info,
         country,
         count,
-        @virtual
+        @virtual,
+        ip
     }
     
     public enum Event

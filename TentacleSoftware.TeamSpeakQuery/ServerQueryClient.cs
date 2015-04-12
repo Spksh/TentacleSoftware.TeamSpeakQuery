@@ -225,7 +225,7 @@ namespace TentacleSoftware.TeamSpeakQuery
 
         /// <summary>
         /// Displays a list of clients online on a virtual server including their ID, nickname, status flags, etc.
-        /// All command options are specified (-uid -away -voice -times -groups -info -icon -country).
+        /// All command options are specified (-uid -away -voice -times -groups -info -icon -country -ip).
         /// Please note that the output will only contain clients which are currently in channels you're able to subscribe to.
         /// </summary>
         /// <returns></returns>
@@ -239,7 +239,8 @@ namespace TentacleSoftware.TeamSpeakQuery
                 .Add(Option.groups)
                 .Add(Option.info)
                 .Add(Option.icon)
-                .Add(Option.country));
+                .Add(Option.country)
+                .Add(Option.ip));
         }
 
         /// <summary>
