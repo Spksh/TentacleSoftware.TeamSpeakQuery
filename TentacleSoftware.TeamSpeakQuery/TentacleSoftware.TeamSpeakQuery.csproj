@@ -1,86 +1,31 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
   <PropertyGroup>
-    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{F229E323-8098-431D-82ED-97D817070BC2}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TentacleSoftware.TeamSpeakQuery</RootNamespace>
-    <AssemblyName>TentacleSoftware.TeamSpeakQuery</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-    <FileAlignment>512</FileAlignment>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+    <Version>1.0.4</Version>
+    <Description>A task-based event-driven Team Speak 3 ServerQuery client that supports SOCKS4 proxies.</Description>
+    <Copyright>Copyright © 2015 Sam Wood</Copyright>
+    <Company />
+    <Product />
+    <Authors />
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-    <DebugSymbols>true</DebugSymbols>
-    <DebugType>full</DebugType>
-    <Optimize>false</Optimize>
-    <OutputPath>bin\Debug\</OutputPath>
-    <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
-    <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
-    <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
-  </PropertyGroup>
+
   <ItemGroup>
-    <Reference Include="System" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
-    <Reference Include="TentacleSoftware.Telnet, Version=1.0.3.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\TentacleSoftware.Telnet.1.0.3.0\lib\net45\TentacleSoftware.Telnet.dll</HintPath>
+    <PackageReference Include="System.Reflection" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="TentacleSoftware.Telnet">
+      <HintPath>..\..\TentacleSoftware.Telnet\TentacleSoftware.Telnet\bin\Debug\netcoreapp2.0\TentacleSoftware.Telnet.dll</HintPath>
     </Reference>
   </ItemGroup>
-  <ItemGroup>
-    <Compile Include="ServerQueryResult\BanAddResult.cs" />
-    <Compile Include="ServerQueryResult\BanInfoResult.cs" />
-    <Compile Include="ServerQueryResult\BanListResult.cs" />
-    <Compile Include="ServerQueryResult\ChannelInfoResult.cs" />
-    <Compile Include="ServerQueryResult\ChannelListResult.cs" />
-    <Compile Include="ServerQueryResult\ClientInfoResult.cs" />
-    <Compile Include="ServerQueryResult\ClientListResult.cs" />
-    <Compile Include="Command.cs" />
-    <Compile Include="NotifyResult\NotifyChannelDescriptionChangedResult.cs" />
-    <Compile Include="NotifyResult\NotifyChannelEditedResult.cs" />
-    <Compile Include="NotifyResult\NotifyClientEnterViewResult.cs" />
-    <Compile Include="NotifyResult\NotifyClientLeftViewResult.cs" />
-    <Compile Include="NotifyResult\NotifyClientMovedResult.cs" />
-    <Compile Include="NotifyResult\NotifyBaseResult.cs" />
-    <Compile Include="NotifyResult\NotifyServerEditedResult.cs" />
-    <Compile Include="NotifyResult\NotifyTextMessageResult.cs" />
-    <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="PropertyMappingAttribute.cs" />
-    <Compile Include="ResultFactory.cs" />
-    <Compile Include="ServerQueryResult\ServerInfoResult.cs" />
-    <Compile Include="ServerQueryClient.cs" />
-    <Compile Include="ServerQueryCommand.cs" />
-    <Compile Include="ServerQueryResult\ServerListInfoResult.cs" />
-    <Compile Include="ServerQueryResult\ServerListResult.cs" />
-    <Compile Include="ServerQueryResult\ServerQueryBaseResult.cs" />
-    <Compile Include="ServerQueryResult\TextResult.cs" />
-    <Compile Include="TypeMappingAttribute.cs" />
-    <Compile Include="ServerQueryResult\WhoAmIResult.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
-  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
+
 </Project>
