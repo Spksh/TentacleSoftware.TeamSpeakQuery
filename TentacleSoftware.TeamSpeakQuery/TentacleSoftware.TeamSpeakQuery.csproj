@@ -5,22 +5,20 @@
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <ApplicationIcon />
     <StartupObject />
-    <Version>1.0.4</Version>
-    <Description>A simple task-based event-driven Telnet client that supports SOCKS4 proxies.</Description>
-    <Copyright>Copyright © 2015 Sam Wood</Copyright>
+    <Version>2.0.0-rc2</Version>
+    <Description>A task-based event-driven Team Speak 3 ServerQuery client that supports SOCKS4 proxies.</Description>
+    <Copyright>Copyright © 2018 Sam Wood</Copyright>
     <Company />
     <Product />
     <Authors />
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyVersion>2.0.0.0</AssemblyVersion>
+    <PackageProjectUrl>https://github.com/Spksh/TentacleSoftware.TeamSpeakQuery</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Spksh/TentacleSoftware.TeamSpeakQuery</RepositoryUrl>
+    <PackageLicenseUrl>https://github.com/Spksh/TentacleSoftware.TeamSpeakQuery/blob/master/LICENSE.md</PackageLicenseUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="System.Reflection" Version="4.3.0" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Reference Include="TentacleSoftware.Telnet">
-      <HintPath>..\..\TentacleSoftware.Telnet\TentacleSoftware.Telnet\bin\Debug\netcoreapp2.0\TentacleSoftware.Telnet.dll</HintPath>
-    </Reference>
+    <PackageReference Include="TentacleSoftware.Telnet" Version="2.0.0-rc2" />
   </ItemGroup>
 </Project>
