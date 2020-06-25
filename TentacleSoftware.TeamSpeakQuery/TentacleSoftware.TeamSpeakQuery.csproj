@@ -16,7 +16,15 @@
     <PackageProjectUrl>https://github.com/Spksh/TentacleSoftware.TeamSpeakQuery</PackageProjectUrl>
     <RepositoryUrl>https://github.com/Spksh/TentacleSoftware.TeamSpeakQuery</RepositoryUrl>
     <PackageLicenseUrl>https://github.com/Spksh/TentacleSoftware.TeamSpeakQuery/blob/master/LICENSE.md</PackageLicenseUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="TentacleSoftware.Telnet" Version="2.0.0-rc3" />
